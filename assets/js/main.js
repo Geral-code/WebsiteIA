@@ -3,6 +3,19 @@
 	"use strict";
    $(document).ready(function($){
 
+    if($(window).width() > 800) {
+        $(' h1').css({
+          opacity: 0,
+          marginTop:0,
+        });
+      
+        $('h1').animate({
+          opacity: 1,
+          marginTop: '-52px'
+        }, 800);
+      }
+    
+
     // tooltip
     $('[data-toggle="tooltip"]').tooltip()
 
@@ -32,6 +45,8 @@
                 $('#search-modal').removeClass('show');
             });
             // Search Trigger
+
+
 
       // Start Slider Carousel
       $('.slider-carousel').owlCarousel({
@@ -148,6 +163,11 @@ $('a').on('click', function(event){
 });
 // End Smooth Scroll for IE/ EDGE/ SAFARI
 
+// Efecto letras
+
+
+
+  // fin Efecto letras
 });
 
 })(jQuery);
