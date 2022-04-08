@@ -15,7 +15,16 @@
         }, 800);
       }
     
-
+     //typed
+     var element = $('.typed');
+     $(function () {
+        element.typed({
+            strings: ["Inteligencia Artificial.", "Modelos Predictivos."],
+            typeSpeed: 100,
+            loop: true,
+            autoplay: true,
+        });
+    });
     // tooltip
     $('[data-toggle="tooltip"]').tooltip()
 
